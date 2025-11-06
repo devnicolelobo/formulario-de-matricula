@@ -123,6 +123,22 @@ Esta pasta contém documentos explicativos de cada task desenvolvida no projeto,
 
 ---
 
+### ✅ Task 09: Componentes Seleção de Cor e Tema
+**Arquivo:** [`TASK-09-THEME-COLOR-SELECTION.md`](./TASK-09-THEME-COLOR-SELECTION.md)
+
+**Conteúdo:**
+- Seleção de cor principal (10 color swatches)
+- Grid de temas do evento (12 temas)
+- Estados visuais (default, hover, selected)
+- Box-shadow múltiplo para glow duplo
+- Transform scale e translateY para feedback
+- Grid responsivo com auto-fill e minmax()
+- Flexbox wrap para listas responsivas
+
+**Status:** ✅ Concluída
+
+---
+
 ### 📝 Próximas Tasks
 
 - Task 07: Estado de Erro e Validação Visual
@@ -157,5 +173,5 @@ Cada documento contém:
 
 ---
 
-**Última atualização:** Task 08 concluída
+**Última atualização:** Task 09 concluída
 
