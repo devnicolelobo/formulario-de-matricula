@@ -85,3 +85,46 @@ textarea {
   }
 }
 
+/* ============================================
+   FILE INPUT CUSTOMIZADO
+   ============================================ */
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+/* Esconder input file nativo */
+input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Botão de upload (label estilizado) */
+.file-upload-button {
+  margin: 0;
+}
+
+/* Status do arquivo */
+.file-status {
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  user-select: none;
+}
+
+/* Estado filled - quando arquivo selecionado (classe será adicionada via JS) */
+.file-status.filled {
+  color: var(--text-heading);
+  font-weight: 600;
+}
+

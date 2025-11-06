@@ -200,10 +200,14 @@
 
                     <div class="input-wrapper">
                         <label for="cover-photo">Foto de capa</label>
-                        <button type="button" class="btn btn-secondary">
-                            <i data-lucide="upload"></i>
-                            <span>Selecionar</span>
-                        </button>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="cover-photo" name="cover-photo" accept="image/*" aria-label="Selecionar foto de capa">
+                            <label for="cover-photo" class="file-upload-button btn btn-secondary">
+                                <i data-lucide="upload"></i>
+                                <span>Selecionar</span>
+                            </label>
+                            <span class="file-status" id="file-status">Nenhum arquivo selecionado</span>
+                        </div>
                     </div>
 
                     <div class="input-wrapper">
