@@ -203,6 +203,40 @@ input[type="radio"]:checked + .segment:hover {
 }
 
 /* ============================================
+   ESTADO DE ERRO NOS SELETORES
+   ============================================ */
+/* Checkbox com erro */
+.checkbox-wrapper.has-error .checkbox-label::before,
+input[type="checkbox"][aria-invalid="true"] + .checkbox-label::before {
+  border-color: var(--feedback-danger);
+  border-width: 2px;
+}
+
+.checkbox-wrapper.has-error:hover .checkbox-label::before,
+input[type="checkbox"][aria-invalid="true"]:hover + .checkbox-label::before {
+  border-color: var(--feedback-danger);
+}
+
+/* Switch com erro */
+.switch-toggle.has-error .switch-slider,
+input[type="checkbox"][aria-invalid="true"] + .switch-slider {
+  background: rgba(255, 89, 89, 0.2);
+  border: 2px solid var(--feedback-danger);
+}
+
+.switch-toggle.has-error:hover .switch-slider,
+input[type="checkbox"][aria-invalid="true"]:hover + .switch-slider {
+  background: rgba(255, 89, 89, 0.3);
+}
+
+/* Segmented control com erro */
+.segmented-control.has-error,
+.segmented-control[aria-invalid="true"] {
+  border: 2px solid var(--feedback-danger);
+  background: rgba(255, 89, 89, 0.1);
+}
+
+/* ============================================
    SEÇÃO DE TERMOS
    ============================================ */
 .terms-section {

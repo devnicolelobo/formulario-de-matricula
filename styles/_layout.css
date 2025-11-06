@@ -12,6 +12,37 @@
 }
 
 /* ============================================
+   RESPONSIVIDADE - MOBILE FIRST
+   ============================================ */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    min-height: auto;
+  }
+
+  .preview-panel {
+    padding: var(--spacing-md);
+  }
+
+  .preview-header {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .logo-title {
+    font-size: 2rem;
+  }
+
+  .form-panel {
+    padding: var(--spacing-md);
+  }
+
+  .form-section {
+    margin-top: var(--spacing-md);
+  }
+}
+
+/* ============================================
    PAINEL LATERAL (PREVIEW)
    ============================================ */
 .preview-panel {

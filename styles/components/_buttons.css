@@ -82,3 +82,18 @@
   min-width: 200px;
 }
 
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+@media (max-width: 768px) {
+  .form-actions {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+  }
+
+  .form-actions .btn-primary {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+

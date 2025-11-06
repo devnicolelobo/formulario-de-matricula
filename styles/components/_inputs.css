@@ -63,6 +63,11 @@ textarea {
   margin-bottom: var(--spacing-md);
 }
 
+/* Último input-wrapper não precisa de margin-bottom */
+.input-wrapper:last-child {
+  margin-bottom: 0;
+}
+
 .input-wrapper label {
   color: var(--text-body);
   font-family: var(--font-body);
@@ -126,5 +131,55 @@ input[type="file"] {
 .file-status.filled {
   color: var(--text-heading);
   font-weight: 600;
+}
+
+/* ============================================
+   ESTADO DE ERRO
+   ============================================ */
+input[type="text"].has-error,
+input[type="email"].has-error,
+input[type="tel"].has-error,
+input[type="date"].has-error,
+textarea.has-error,
+input[type="text"][aria-invalid="true"],
+input[type="email"][aria-invalid="true"],
+input[type="tel"][aria-invalid="true"],
+input[type="date"][aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: var(--feedback-danger);
+}
+
+input[type="text"].has-error:focus,
+input[type="email"].has-error:focus,
+input[type="tel"].has-error:focus,
+input[type="date"].has-error:focus,
+textarea.has-error:focus,
+input[type="text"][aria-invalid="true"]:focus,
+input[type="email"][aria-invalid="true"]:focus,
+input[type="tel"][aria-invalid="true"]:focus,
+input[type="date"][aria-invalid="true"]:focus,
+textarea[aria-invalid="true"]:focus {
+  border-color: var(--feedback-danger);
+  box-shadow: 0 0 0 3px rgba(255, 89, 89, 0.1);
+}
+
+/* Mensagem de erro */
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--feedback-danger);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  margin-top: var(--spacing-xs);
+  line-height: 1.5;
+}
+
+.error-message i,
+.error-message svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+  flex-shrink: 0;
 }
 
