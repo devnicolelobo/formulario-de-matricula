@@ -52,6 +52,28 @@
                     </div>
 
                     <div class="input-wrapper">
+                        <label>Tipo</label>
+                        <div class="segmented-control">
+                            <input type="radio" id="event-type-presencial" name="event-type" value="presencial" checked>
+                            <label for="event-type-presencial" class="segment">
+                                <i data-lucide="building"></i>
+                                <span>Presencial</span>
+                            </label>
+
+                            <input type="radio" id="event-type-online" name="event-type" value="online">
+                            <label for="event-type-online" class="segment">
+                                <i data-lucide="video"></i>
+                                <span>Online</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-location">Local</label>
+                        <input type="text" id="event-location" name="event-location" placeholder="Link ou endereço">
+                    </div>
+
+                    <div class="input-wrapper">
                         <label for="event-description">Descrição</label>
                         <textarea id="event-description" name="event-description" placeholder="Escreva sobre os detalhes do evento" rows="4"></textarea>
                     </div>
