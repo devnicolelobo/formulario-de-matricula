@@ -91,6 +91,22 @@ Esta pasta contém documentos explicativos de cada task desenvolvida no projeto,
 
 ---
 
+### ✅ Task 07: Componente Botões Primário e Secundário
+**Arquivo:** [`TASK-07-BUTTONS.md`](./TASK-07-BUTTONS.md)
+
+**Conteúdo:**
+- Classe base `.btn` com estilos compartilhados
+- Botão primário (`.btn-primary`) com estados hover/active
+- Botão secundário (`.btn-secondary`) com estados hover/active
+- Ícones nos botões com Lucide
+- Área de ações do formulário (`.form-actions`)
+- Padrão BEM (Block Element Modifier)
+- Display flex para alinhamento
+
+**Status:** ✅ Concluída
+
+---
+
 ### 📝 Próximas Tasks
 
 - Task 07: Estado de Erro e Validação Visual
@@ -125,5 +141,5 @@ Cada documento contém:
 
 ---
 
-**Última atualização:** Task 06 concluída
+**Última atualização:** Task 07 concluída
 
