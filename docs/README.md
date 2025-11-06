@@ -171,14 +171,28 @@ Esta pasta contém documentos explicativos de cada task desenvolvida no projeto,
 
 ---
 
+### ✅ Task 12: Qualidade, Validação Visual e Responsividade
+**Arquivo:** [`TASK-12-VALIDATION-RESPONSIVE.md`](./TASK-12-VALIDATION-RESPONSIVE.md)
+
+**Conteúdo:**
+- Estado de erro visual em inputs (borda vermelha, box-shadow)
+- Mensagens de erro com ícone e cor danger
+- Validação visual em checkboxes, switches e segmented controls
+- Refinamento de espaçamentos (múltiplos de 8px)
+- Responsividade mobile-first com media queries
+- Grid de 2 colunas para 1 coluna no mobile
+- Inputs lado a lado empilham verticalmente
+- Botões e temas adaptativos
+
+**Status:** ✅ Concluída
+
+---
+
 ### 📝 Próximas Tasks
 
-- Task 07: Estado de Erro e Validação Visual
-- Task 08: Componentes de Botões
-- Task 09: Seletores e Checkboxes
-- Task 10: Temas e Personalização
-- Task 11: Validação de Formulário
-- Task 12: Responsividade
+- Task 13: JavaScript e Validação de Formulário
+- Task 14: Preview Dinâmico do Convite
+- Task 15: Geração e Download do Convite
 
 ---
 
