@@ -1,2 +1,131 @@
 /* Estilos para temas */
 
+/* ============================================
+   SELEÇÃO DE COR (COLOR SWATCHES)
+   ============================================ */
+.color-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
+}
+
+.color-swatch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid var(--input-stroke);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estado default */
+.color-swatch {
+  border-color: var(--input-stroke);
+}
+
+/* Estado hover */
+.color-swatch:hover {
+  border-color: var(--text-body);
+  border-width: 4px;
+  transform: scale(1.1);
+}
+
+/* Estado selected */
+input[type="radio"]:checked + .color-swatch {
+  border-color: var(--color-brand-light);
+  border-width: 3px;
+  box-shadow: 0 0 0 3px rgba(89, 178, 255, 0.3), 0 0 0 6px rgba(89, 178, 255, 0.15);
+  transform: scale(1.15);
+}
+
+/* ============================================
+   GRID DE TEMAS (THEME GRID)
+   ============================================ */
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xs);
+}
+
+.theme-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md);
+  background: var(--shape-button);
+  border: 2px solid var(--input-stroke);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.theme-image {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+}
+
+.theme-name {
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  user-select: none;
+}
+
+/* Estado default */
+.theme-card {
+  border-color: var(--input-stroke);
+}
+
+/* Estado hover */
+.theme-card:hover {
+  border-color: var(--text-body);
+  background: var(--shape-hover);
+  transform: translateY(-2px);
+}
+
+/* Estado selected */
+input[type="radio"]:checked + .theme-card {
+  border-color: var(--color-brand-light);
+  border-width: 2px;
+  box-shadow: 0 0 0 3px rgba(89, 178, 255, 0.2);
+  background: var(--shape-hover);
+}
+
+input[type="radio"]:checked + .theme-card .theme-name {
+  color: var(--color-brand-light);
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+@media (max-width: 768px) {
+  .theme-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: var(--spacing-sm);
+  }
+
+  .theme-image {
+    font-size: 2rem;
+  }
+
+  .theme-name {
+    font-size: 0.7rem;
+  }
+
+  .color-swatch {
+    width: 36px;
+    height: 36px;
+  }
+}
+
