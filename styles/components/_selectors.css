@@ -243,5 +243,12 @@ input[type="checkbox"][aria-invalid="true"]:hover + .switch-slider {
   margin-top: var(--spacing-lg);
   padding-top: var(--spacing-lg);
   border-top: 1px solid var(--input-stroke);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.terms-section .checkbox-wrapper {
+  margin-bottom: 0;
 }
 
