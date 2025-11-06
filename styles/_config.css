@@ -1,0 +1,327 @@
+/* Variáveis CSS, reset e estilos globais */
+
+/* ============================================
+   STYLE GUIDE - FESTIVITE
+   ============================================ */
+
+/* ============================================
+   CORES - BRAND
+   ============================================ */
+:root {
+  /* Brand Colors */
+  --color-brand-light: #59B2FF;
+  --color-brand-mid: #3487CF;
+  --color-brand-dark: #1D6FB6;
+
+  /* Accent Colors */
+  --color-accent-purple: #B259FF;
+  --color-accent-fuschia: #FF59F9;
+  --color-accent-pink: #FF598B;
+  --color-accent-orange: #FF8B59;
+  --color-accent-yellow: #FFCD59;
+  --color-accent-lime: #E1FF59;
+  --color-accent-green: #59FF91;
+  --color-accent-cyan: #59FFF9;
+  --color-accent-navy: #6A59FF;
+
+  /* Feedback */
+  --color-feedback-danger: #FF5959;
+
+  /* Input */
+  --color-input-base: #1C1F21;
+  --color-input-stroke: #363B40;
+  --color-input-placeholder: #869198;
+  --color-input-active: var(--color-brand-light); /* Borda azul quando ativo */
+  --color-input-error: var(--color-feedback-danger); /* Borda vermelha quando erro */
+
+  /* Shape */
+  --color-shape-background: #131516;
+  --color-shape-body: #212427;
+  --color-shape-button: #2D3136;
+  --color-shape-hover: #383D42;
+
+  /* Text */
+  --color-text-body: #C8CDD0;
+  --color-text-heading: #F9F9F9;
+  --color-text-label: var(--color-text-body); /* Para labels de inputs */
+
+  /* Layout */
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 1rem;      /* 16px */
+  --spacing-md: 1.5rem;    /* 24px */
+  --spacing-lg: 2rem;      /* 32px */
+  --spacing-xl: 3rem;      /* 48px */
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;    /* 4px */
+  --radius-md: 0.5rem;     /* 8px */
+  --radius-lg: 1rem;       /* 16px */
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* Tipografia (Tokens) */
+  --font-body: 'Open Sans', sans-serif;
+  --font-heading: 'Baloo 2', system-ui, sans-serif;
+  --font-display: 'Leckerli One', cursive;
+
+  /* Alias de Cores (Tokens solicitados) */
+  --shape-background: #131516; /* base fundo */
+  --shape-body: #212427;        /* cartões/painéis */
+  --shape-button: #2D3134;      /* botões neutros */
+
+  --text-heading: #F9F9F9;
+  --text-body: #C8CDD0;
+  --brand-mid: #3487CF;
+
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --feedback-danger: #FF5959;
+}
+
+/* ============================================
+   TIPOGRAFIA
+   ============================================ */
+/* 
+  Fontes do Google Fonts:
+  - Leckerli One: Logo (40px, Regular)
+  - Baloo 2: Heading Md (28px, Bold), Heading Sm (18px, Bold)
+  - Open Sans: Body Md (16px, Regular/SemiBold), Body Sm (14px, Regular/SemiBold), Body Xs (12px, Regular/SemiBold)
+*/
+
+/* ============================================
+   COMPONENTES - TEXT INPUT
+   ============================================ */
+/* 
+  Estados:
+  - default: Fundo #1C1F21, placeholder #869198, sem borda visível
+  - active: Fundo #1C1F21, texto branco, borda azul #59B2FF
+  - error: Fundo #1C1F21, placeholder #869198, borda vermelha #FF5959, mensagem de erro com ícone
+*/
+
+/* ============================================
+   COMPONENTES - TEXT AREA
+   ============================================ */
+/* 
+  Estados:
+  - default: Fundo #1C1F21, placeholder #869198, sem borda visível
+  - active: Fundo #1C1F21, texto branco, borda azul #59B2FF
+  - error: Fundo #1C1F21, texto branco, borda vermelha #FF5959, mensagem de erro com ícone
+*/
+
+/* ============================================
+   COMPONENTES - BUTTON
+   ============================================ */
+/* 
+  Primary:
+  - default: Fundo azul #59B2FF, texto branco, ícones brancos
+  - hover: Fundo azul mais escuro
+  
+  Secondary:
+  - default: Fundo cinza #2D3136, texto cinza claro, ícones cinza claro
+  - hover: Fundo cinza com tonalidade diferente (#383D42)
+  
+  Todos os botões têm ícones de upload (seta para cima) à esquerda e direita do texto "Label"
+*/
+
+/* ============================================
+   COMPONENTES - FILE INPUT
+   ============================================ */
+/* 
+  Estados:
+  - default: Botão cinza escuro com ícone de upload azul e texto "Selecionar", texto "Nenhum arquivo selecionado" ao lado
+  - filled: Botão cinza escuro com ícone de upload azul e texto "Selecionar", nome do arquivo ao lado (ex: "image.png")
+  - error: Botão cinza escuro, texto "Nenhum arquivo selecionado", mensagem de erro com ícone vermelho abaixo
+*/
+
+/* ============================================
+   COMPONENTES - SWITCH TOGGLE
+   ============================================ */
+/* 
+  Estados:
+  - off: Fundo cinza escuro, thumb cinza claro, texto "Escuro" à direita
+  - on: Fundo azul #59B2FF, thumb branco, texto "Claro" à direita
+*/
+
+/* ============================================
+   COMPONENTES - CHECKBOX
+   ============================================ */
+/* 
+  Estados:
+  - unchecked: Caixa cinza escura vazia, texto cinza escuro
+  - checked: Caixa cinza escura com check branco, texto cinza claro
+*/
+
+/* ============================================
+   COMPONENTES - COLOR SELECTION
+   ============================================ */
+/* 
+  Estados:
+  - default: Círculo cinza escuro com borda cinza clara
+  - hover: Círculo cinza escuro com borda cinza clara mais espessa
+  - selected: Círculo cinza escuro com borda azul #59B2FF e brilho azul ao redor
+*/
+
+/* ============================================
+   ÍCONES
+   ============================================ */
+/* 
+  Fonte: Lucide Icons
+  Stroke: 1.5px
+  Ícones utilizados: Calendar, Paintbrush, Calendar (sad), Ticket, Upload, Info/Warning, Checkmark, Document/List, Video Camera
+*/
+
+/* ============================================
+   ESTRUTURA DO LAYOUT - FESTIVITE
+   ============================================ */
+/* 
+  LAYOUT GERAL:
+  - Layout de duas colunas principais
+  - Coluna esquerda: Branding + Preview do convite
+  - Coluna direita: Formulário completo de criação
+  
+  COLUNA ESQUERDA:
+  - Logo "Festivite" (Leckerli One, 40px, rosa vibrante)
+  - Ícone de confetes coloridos ao lado do logo
+  - Tagline: "Crie um convite digital para o seu evento"
+  - Preview do convite (imagem do bolo arco-íris por padrão)
+  
+  COLUNA DIREITA - FORMULÁRIO:
+  
+  1. TÍTULO PRINCIPAL:
+     - "Crie seu convite" (Baloo 2, Heading Md, 28px, Bold)
+  
+  2. SEÇÃO "SOBRE O EVENTO":
+     - Ícone: Calendar (Lucide Icons)
+     - Título: "Sobre o evento"
+     - Campos:
+       * Título: Input text, placeholder "Nome do evento"
+       * Início: Input date/time, placeholder "DD/MM/AAAA, --:--" (lado a lado com Fim)
+       * Fim: Input date/time, placeholder "DD/MM/AAAA, --:--"
+       * Tipo: Dois botões de seleção (radio-like):
+         - "Presencial" (ícone: building/casa) - pode estar selecionado
+         - "Online" (ícone: monitor/video camera) - pode estar selecionado
+       * Local: Input text, placeholder "Link ou endereço"
+       * Descrição: Textarea, placeholder "Escreva sobre os detalhes do evento"
+  
+  3. SEÇÃO "PERSONALIZAÇÃO":
+     - Ícone: Paintbrush/Palette (Lucide Icons)
+     - Título: "Personalização"
+     - Campos:
+       * Cor principal: 
+         - Label: "Cor principal"
+         - 12 círculos coloridos em linha (swatches):
+           - Azul claro (brand-light)
+           - Roxo (accent-purple)
+           - Fúcsia (accent-fuschia)
+           - Rosa (accent-pink) - pode estar selecionado
+           - Laranja (accent-orange)
+           - Amarelo (accent-yellow)
+           - Verde limão (accent-lime)
+           - Verde (accent-green)
+           - Ciano (accent-cyan)
+           - Azul marinho (accent-navy)
+           - (pode haver mais cores)
+         - Estado selecionado: borda azul #59B2FF com brilho
+       
+       * Tema do evento:
+         - Label: "Tema do evento"
+         - Grid de 12 miniaturas de imagem (3x4 ou similar):
+           1. "Aniversário" (bolo com velas) - pode estar selecionado
+           2. "Infantil" (balões e doces)
+           3. "Formatura" (capelo e diploma)
+           4. "Casamento" (alianças)
+           5. "Chá de bebê" (roupinhas de bebê)
+           6. "Chá de panela" (utensílios de cozinha)
+           7. "Carnaval" (máscaras)
+           8. "Páscoa" (ovos de páscoa)
+           9. "São João" (fogueira e bandeirinhas)
+           10. "Halloween" (abóboras)
+           11. "Natal" (presente)
+           12. "Outro" (genérico)
+         - Estado selecionado: borda azul #59B2FF ao redor da miniatura
+       
+       * Estilo:
+         - Label: "Estilo"
+         - Switch Toggle com texto "Escuro" à direita
+         - Estados: off (modo escuro) / on (modo claro)
+       
+       * Foto de capa:
+         - Label: "Foto de capa"
+         - File Input:
+           * Botão "Selecionar" (cinza escuro, ícone upload azul)
+           * Texto ao lado: "Nenhum arquivo selecionado" ou nome do arquivo
+  
+  4. SEÇÃO "DADOS PARA CONTATO":
+     - Ícone: User/Person (Lucide Icons)
+     - Título: "Dados para contato"
+     - Campos:
+       * Nome: Input text, placeholder "Nome completo"
+         - Campo obrigatório (validação com borda vermelha e mensagem "Campo obrigatório")
+       * E-mail: Input text, placeholder "exemplo@email.com"
+       * Telefone: Input text, placeholder "(99) 99999-9999"
+  
+  5. TERMOS E CONDIÇÕES:
+     - Checkbox: "Li e concordo com os Termos e Condições e com a Política de Privacidade"
+       * "Termos e Condições" e "Política de Privacidade" são links clicáveis
+     - Checkbox: "Aceito receber atualizações e promoções por e-mail" (opcional)
+     - Checkbox: "Aceito receber atualizações e promoções por SMS" (opcional)
+  
+  6. BOTÃO DE AÇÃO:
+     - Botão primário: "Gerar convite"
+     - Posicionado no final do formulário
+     - Cor: Azul #59B2FF (brand-light)
+     - Pode ter ícone de envelope ou similar
+*/
+
+/* ============================================
+   VALIDAÇÃO E ESTADOS DE ERRO
+   ============================================ */
+/* 
+  Campos obrigatórios:
+  - Nome completo (Dados para contato)
+  - Termos e Condições (checkbox)
+  
+  Validação visual:
+  - Campo vazio/inválido: borda vermelha #FF5959
+  - Mensagem de erro: texto vermelho com ícone de alerta (círculo com exclamação)
+  - Texto da mensagem: "Campo obrigatório" ou mensagem específica
+*/
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+/* 
+  Layout:
+  - Desktop: Duas colunas lado a lado
+  - Mobile: Colunas empilhadas verticalmente (coluna direita primeiro, depois esquerda)
+  - Campos de data (Início/Fim): lado a lado no desktop, empilhados no mobile
+*/
+
+/* ============================================
+   RESET E ESTILOS GLOBAIS
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--shape-background);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Títulos e legendas - base Dark Mode */
+h1,
+h2,
+legend {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+}
+

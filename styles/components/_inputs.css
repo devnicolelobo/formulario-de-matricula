@@ -1,0 +1,87 @@
+/* Estilos para inputs */
+
+/* ============================================
+   ESTILOS BASE - INPUTS E TEXTAREA
+   ============================================ */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+  width: 100%;
+  background: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm);
+  color: var(--text-heading);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+/* ============================================
+   PLACEHOLDER
+   ============================================ */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="date"]::placeholder,
+textarea::placeholder {
+  color: var(--input-placeholder);
+  opacity: 1;
+}
+
+/* ============================================
+   ESTADO DE FOCO (ACTIVE)
+   ============================================ */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-brand-light);
+  box-shadow: 0 0 0 3px rgba(89, 178, 255, 0.1);
+}
+
+/* ============================================
+   TEXTAREA - RESIZE CONTROLADO
+   ============================================ */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ============================================
+   INPUT WRAPPER - LAYOUT
+   ============================================ */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.input-wrapper label {
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* ============================================
+   INPUTS LADO A LADO (FLEXBOX)
+   ============================================ */
+.input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .input-group {
+    grid-template-columns: 1fr;
+  }
+}
+

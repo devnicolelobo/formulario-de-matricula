@@ -1,0 +1,90 @@
+/* Grid de duas colunas e estrutura da página */
+
+/* ============================================
+   CONTAINER PRINCIPAL
+   ============================================ */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* ============================================
+   PAINEL LATERAL (PREVIEW)
+   ============================================ */
+.preview-panel {
+  background: var(--shape-body);
+  padding: var(--spacing-lg);
+}
+
+/* Header do painel lateral */
+.preview-header {
+  display: grid;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-lg);
+}
+
+.logo-title {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  font-size: 2.5rem; /* ~40px */
+  line-height: 1.1;
+}
+
+.logo-subtitle {
+  font-family: var(--font-body);
+  color: var(--text-body);
+  font-size: 0.9375rem; /* 15px */
+}
+
+.preview-cover {
+  margin-top: var(--spacing-md);
+  height: 240px;
+  border-radius: var(--radius-lg);
+  background: #0f1112;
+  display: grid;
+  place-items: center;
+  color: #777;
+}
+
+/* ============================================
+   PAINEL PRINCIPAL (FORMULÁRIO)
+   ============================================ */
+.form-panel {
+  background: var(--shape-body);
+  padding: var(--spacing-lg);
+  overflow-y: auto;
+}
+
+/* Títulos de seção (fieldset/legend) */
+.form-section {
+  border: 0;
+  margin-top: var(--spacing-lg);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-title svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--brand-mid);
+}
+
+.section-placeholder {
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--shape-button);
+  display: grid;
+  place-items: center;
+  color: var(--text-body);
+}
+

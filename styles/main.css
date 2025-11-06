@@ -1,0 +1,14 @@
+/* Importação na ordem correta: Configuração -> Layout -> Componentes */
+
+/* Configuração */
+@import url('./_config.css');
+
+/* Layout */
+@import url('./_layout.css');
+
+/* Componentes */
+@import url('./components/_buttons.css');
+@import url('./components/_inputs.css');
+@import url('./components/_selectors.css');
+@import url('./components/_theme.css');
+

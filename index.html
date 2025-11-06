@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivite - Criador de Convites Digitais</title>
+    <!-- Google Fonts: Leckerli One, Baloo 2, Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Leckerli+One&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Painel Lateral: Preview do Convite -->
+        <div class="preview-panel">
+            <header class="preview-header">
+                <h1 class="logo-title">Festivite</h1>
+                <p class="logo-subtitle">Crie um convite digital para o seu evento</p>
+            </header>
+
+            <div class="preview-cover" aria-label="Preview de capa">Imagem de capa</div>
+        </div>
+
+        <!-- Painel Principal: Formulário -->
+        <main class="form-panel">
+            <h1>Crie seu convite</h1>
+
+            <div class="form-content">
+                <!-- Seção: Sobre o Evento -->
+                <fieldset class="form-section">
+                    <legend class="section-title">
+                        <i data-lucide="calendar"></i>
+                        <span>Sobre o evento</span>
+                    </legend>
+
+                    <div class="input-wrapper">
+                        <label for="event-title">Título</label>
+                        <input type="text" id="event-title" name="event-title" placeholder="Nome do evento">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <label for="event-start">Início</label>
+                            <input type="date" id="event-start" name="event-start" placeholder="DD/MM/AAAA">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-end">Fim</label>
+                            <input type="date" id="event-end" name="event-end" placeholder="DD/MM/AAAA">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-description">Descrição</label>
+                        <textarea id="event-description" name="event-description" placeholder="Escreva sobre os detalhes do evento" rows="4"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Seção: Personalização -->
+                <fieldset class="form-section">
+                    <legend class="section-title">
+                        <i data-lucide="palette"></i>
+                        <span>Personalização</span>
+                    </legend>
+                    <!-- Campos de personalização serão adicionados nas próximas tasks -->
+                </fieldset>
+
+                <!-- Seção: Dados para Contato -->
+                <fieldset class="form-section">
+                    <legend class="section-title">
+                        <i data-lucide="user"></i>
+                        <span>Dados para contato</span>
+                    </legend>
+
+                    <div class="input-wrapper">
+                        <label for="contact-name">Nome</label>
+                        <input type="text" id="contact-name" name="contact-name" placeholder="Nome completo">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <label for="contact-email">E-mail</label>
+                            <input type="email" id="contact-email" name="contact-email" placeholder="exemplo@email.com">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="contact-phone">Telefone</label>
+                            <input type="tel" id="contact-phone" name="contact-phone" placeholder="(99) 99999-9999">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </main>
+    </div>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      if (window.lucide) { lucide.createIcons(); }
+    </script>
+</body>
+</html>
+
