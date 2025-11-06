@@ -139,6 +139,22 @@ Esta pasta contém documentos explicativos de cada task desenvolvida no projeto,
 
 ---
 
+### ✅ Task 10: Componente Segmented Control (Seleção de Tipo)
+**Arquivo:** [`TASK-10-SEGMENTED-CONTROL.md`](./TASK-10-SEGMENTED-CONTROL.md)
+
+**Conteúdo:**
+- Segmented Control para seleção de tipo (Presencial/Online)
+- Gestão de border-radius apenas nas extremidades
+- Seletores `:first-of-type` e `:last-of-type`
+- Flex: 1 para distribuição igual de espaço
+- Padding e gap para visual de moldura
+- Estados hover e checked com transições
+- Ícones nos segmentos (building, video)
+
+**Status:** ✅ Concluída
+
+---
+
 ### 📝 Próximas Tasks
 
 - Task 07: Estado de Erro e Validação Visual
@@ -173,5 +189,5 @@ Cada documento contém:
 
 ---
 
-**Última atualização:** Task 09 concluída
+**Última atualização:** Task 10 concluída
 
