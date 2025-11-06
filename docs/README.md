@@ -107,6 +107,22 @@ Esta pasta contém documentos explicativos de cada task desenvolvida no projeto,
 
 ---
 
+### ✅ Task 08: Componentes Checkbox e Switch Toggle Customizados
+**Arquivo:** [`TASK-08-SELECTORS.md`](./TASK-08-SELECTORS.md)
+
+**Conteúdo:**
+- Esconder inputs nativos mantendo acessibilidade
+- Checkbox customizado com `::before` e `:checked`
+- Switch toggle com trilha e thumb (`::after`)
+- Transform `translateX()` para animação do thumb
+- Pseudo-elementos e pseudo-classes
+- Seletores adjacentes (`+`)
+- SVG inline em CSS para ícone de check
+
+**Status:** ✅ Concluída
+
+---
+
 ### 📝 Próximas Tasks
 
 - Task 07: Estado de Erro e Validação Visual
@@ -141,5 +157,5 @@ Cada documento contém:
 
 ---
 
-**Última atualização:** Task 07 concluída
+**Última atualização:** Task 08 concluída
 
