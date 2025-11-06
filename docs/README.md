@@ -155,6 +155,22 @@ Esta pasta contém documentos explicativos de cada task desenvolvida no projeto,
 
 ---
 
+### ✅ Task 11: Componente File Input (Foto de Capa)
+**Arquivo:** [`TASK-11-FILE-INPUT.md`](./TASK-11-FILE-INPUT.md)
+
+**Conteúdo:**
+- File input customizado com input nativo escondido
+- Label estilizado como botão secundário
+- Elemento de status (default: "Nenhum arquivo selecionado", filled: nome do arquivo)
+- Atributo `accept="image/*"` para filtrar arquivos
+- Técnica `clip: rect()` para ocultação completa
+- Estrutura preparada para JavaScript futuro
+- Estados visuais com cores diferentes (text-body/text-heading)
+
+**Status:** ✅ Concluída
+
+---
+
 ### 📝 Próximas Tasks
 
 - Task 07: Estado de Erro e Validação Visual
@@ -189,5 +205,5 @@ Cada documento contém:
 
 ---
 
-**Última atualização:** Task 10 concluída
+**Última atualização:** Task 11 concluída
 
